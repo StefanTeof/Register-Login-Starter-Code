@@ -10,7 +10,7 @@ const connectDb = mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
 
 const userShcema = mongoose.Schema({
     username: String,
-    password: String
+    password: String,
 });
 
 const UserModel = mongoose.model('User', userShcema);
